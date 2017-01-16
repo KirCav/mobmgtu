@@ -5,7 +5,6 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<link rel="stylesheet" href="css/style.css">
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="phonegap.js"></script>
@@ -13,24 +12,27 @@
 </head>
 <body>
 <!-- begin homePage -->
-	<div data-role="page" id="start"    datafullscreen="true" >
-		
+	<div data-role="page" id="curse"    datafullscreen="true" >
+		<div data-role="header" data-position="fixed" data-add-back-btn="true"  data-back-btn-text="Назад" data-back-btn-theme="a">
+			<h1>Настройки</h1>
+		</div>
 		<div data-role="main" class="ui-content main-page">
-			<div class="logo-wrap">				
-				<div>
-				<img class="logo-img" src="img/logo_big.png">
-				<a href="#start" data-icon="user" data-role="button">Login</a>
-				<a href="#start" data-icon="video" data-role="button">Online-Tv</a>
-				<a href="str/demo.html"data-icon="info"  data-role="button">Demo</a>
-				</div>										
+			<div>
+				<label for="rank-slider">Громкость:</label>
+				<input type="range" name="rank-slider" id="rank-slider" value="50" min="0" max="100">
+				
+				<a href="#popup" data-role="button">Сохранить</a>
 			</div>
+							
+		
 		<div data-role="footer"  data-id="main-menu" data-position="fixed">
+			
 		</div>
 
 	</div>
 <!-- end homePage -->
 
-<!-- begin aboutPage -->
-
+	
 </body>
+
 </html>
